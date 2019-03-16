@@ -1,0 +1,32 @@
+# top-most EditorConfig file
+# use to avoid to search in every parent directory another .editorconfig file
+root = true
+
+# for all files
+# encode files to utf-8
+# remove any whitespace characters preceding newline
+# use unix end of line
+# ensure file ends with a newline
+[*]
+charset = utf-8
+trim_trailing_whitespace = true
+end_of_line = lf
+insert_final_newline = true
+
+# for all js and json files
+# use 2 space indentation
+[*.{js,json}]
+indent_style = space
+indent_size = 2
+
+# for all php, markdown, yml and yaml files
+# use 4 space indentation
+[*.{md, yaml, yml}]
+indent_style = space
+indent_size = 4
+
+# for all makefiles
+# use tab indentation with a with of 4 space
+[{Makefile,**.mk}]
+indent_style = tab
+tab_width = 4

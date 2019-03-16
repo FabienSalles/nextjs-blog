@@ -1,0 +1,11 @@
+version: '3'
+services:
+    node:
+        image: node:8
+        user: node
+        working_dir: /var/www/app
+        volumes:
+            - ./:/var/www/app
+        ports:
+            - '3000:3000'
+        command: npm run dev
