@@ -4,8 +4,13 @@ import Header from './header';
 import Main from './main';
 import Footer from './footer';
 
-export default ({ content }) => (
-    <Grommet theme={grommet}>
+export default ({ children }) => (
+  <Grommet full theme={grommet}>
+    <Box fill="vertical">
       <Header/>
-    </Grommet>
+      <Main content={children}>
+      </Main>
+      <Footer/>
+    </Box>
+  </Grommet>
 )
